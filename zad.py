@@ -1,3 +1,31 @@
+# zad 1 
+
+def error():
+    print("❹⓿❹ | Wystąpił bład, zrestartuj program")
+
+a = int(input("Wprowadz a: "))
+
+if a % 2 == 0:
+    print("licza jest parzysta")
+else:
+    print("Liczba nie jest parzysta")
+
+wiek = int(input("Wprowadz wiek: "))
+
+if wiek >= 18:
+    print("Jesteś dorosły")
+else:
+    print("Nie jesteś dorosły")
+
+
+slowo = input("Wprowadz słowo: ")
+
+slowoo = slowo[::-1]
+
+if slowo == slowoo:
+    print("Słowo jest palindromem")
+else:
+    print("Słowo nie jest palindromem")
 # Zadanko 1
 
 faren = 0
@@ -20,6 +48,7 @@ info2 = int(input("Wprowadz swoja liczbe pkt: "))
 
 if info1 < info2:
     print("XD???")
+    error()
 else:
     oblicz = info2 / info1 * 100
     print("Wynik w", oblicz,"%")
