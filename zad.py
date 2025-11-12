@@ -63,3 +63,24 @@ elif oblicz < 85:
     print("Czwórka")
 elif oblicz > 85:
     print("Piątka")
+
+waga = int(input("Podaj wagę w kilogramach: "))
+wzrost = int(input("Podaj wzrost w cm"))
+
+relheight = (wzrost / 100) **2
+bmi = waga / relheight
+
+print("Twoje bmi", bmi)
+
+l1 = int(input("Wprowadz 1 bok trojkata: "))
+l2 = int(input("Wprowadz 2 bok trojkata: "))
+l3 = int(input("Wprowadz 3 bok trojkata: "))
+
+liczby = [l1, l2, l3]
+
+n_bok = max(liczby)
+
+if l1 + l2 > l3:
+    print("Można utworzyć trójkąt")
+else:
+    print("Trójkat nie moze byc utworzony")
